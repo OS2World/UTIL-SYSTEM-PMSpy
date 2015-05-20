@@ -1,0 +1,96 @@
+NEWS FILE  1.10             PMSPY32 PACKAGE
+                            ===============
+
+Owner  : J. von Kaenel (JVK     at YKTVMV)
+Authors: J. von Kaenel (JVK     at YKTVMV)
+         S. M. Diering (DIERING at RALVM14)
+
+*************************************************************************
+*************************************************************************
+****                                                                 ****
+****  IMPORTANT: this is the 32-bit version of PMSPY for OS2TOOLS    ****
+****                                                                 ****
+*************************************************************************
+*************************************************************************
+
+Legend:
+-------
++ represents a NEW feature
+- represents a BUG fix
+* represents a USER suggestion
+? represents a CHANGE
+
+Version 1.10   July 23, 1993
+=========================================================================
+   Pull-downs
+   ==========
++* added ability to open LOG file with a "snapshot" of the current list
+
++* added ability to "spy" on the SYSTEM queue (re-enables DDE spying)
+
+   "Spy List"
+   ===========
++  when mouse button #1 is double-clicked on a message, a dialog opens
+   which provides more detail about the message and its parameters.  the
+   parameters may be displayed in various formats.
+
+   Note: a future version will allow the specification of the MP1/MP2
+         formatting values in the profile...
+
++  "Window Selection" dialog
+   =========================
+   > revised old OBJECT window selection dialog to be general window selection
+   > displays descendents of HWND_DESKTOP and/or HWND_OBJECT (user selectable)
+   > list can be refreshed from dialog
+   > can select to spy on selected window or it's message queue
+   > list uses "spy list" non-proportional FONT
+
++* "Message Filtering" dialog
+   ==========================
+   > added ability to set or clear freeze/thaw "triggers"
+   > added ability to reset message specific usage counts
+   > changed to not close dialog after pushbutton pressed so that multiple
+     attributes can be applied;  list items are updated after each
+     attribute adjustment is made
+   > list uses "spy list" non-proportional FONT
+   > allows extended selections
+
+?  "Group Filtering" dialog
+   ========================
+   > changed to not close dialog after pushbutton pressed so that multiple
+     attributes can be applied;  list items are updated after each
+     attribute adjustment is made
+   > list uses "spy list" non-proportional FONT
+   > allows extended selections
+
+   Default Profile
+   ===============
++  added MMPM/2 support
+
+   Miscellaneous
+   =============
+?  adjusted FONT changing process to minimize inter-line spacing in spy list
+
+?  display illegal mouse pointer while over PMSPY window during selection
+   (no more "Can't spy the spy" message!)
+
+*  preserve entered PROFILE and LOG file names in PMSPY.INI
+
+-  correct WC_xxxx class name resolution
+
+Version 1.01   Oct 14 1992
+=========================================================================
+-  fixed logfile problem
+
+Version 1.00   Mai  1 1992
+=========================================================================
++  initial release of 32-bit PMSPY for OS/2 2.00
+
+   This version ships also with the IBM Workframe as an example
+   and useful tool for OS/2 application developers.
+
+Acknowledgement:
+----------------
+Many thanks to Bill Sarantakos, who did the initial port to the 32-bit
+OS/2 C Set/2 compiler and the Workframe environment.
+
